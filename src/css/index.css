@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+ --text-color: #1e1e1e;
+ --hover-box: #FFE9E2;
+ --button-random: #5B0090;
+ --modal-color: #FFFDF5;
+ --opacity: 85%;
+--font-h: "Tourney", sans-serif;
+--font-text: "Inter", sans-serif;
+
+background: rgb(255,228,228);
+background: radial-gradient(circle at center, #ffe4e4 1%,#fff0df 52%,#fff0df 52%,#fffdf5 54%,#fff0df 58%,#fffdf5 65%,#fffdf5 100%);
+background-repeat: no-repeat;
+
+}
+
+
+h1 {
+ font-family: var(--font-h);
+ font-weight: 300;
+}
+
+
+
