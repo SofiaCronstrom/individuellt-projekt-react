@@ -5,7 +5,6 @@
  --hover-box: #FFE9E2;
  --button-random: #5B0090;
  --modal-color: #FFFDF5;
- --opacity: 85%;
 --font-h: "Tourney", sans-serif;
 --font-text: "Inter", sans-serif;
 
@@ -16,9 +15,33 @@ background-repeat: no-repeat;
 }
 
 
-h1 {
+h1, a, h2, h3 {
  font-family: var(--font-h);
- font-weight: 300;
+ font-weight: 500;
+}
+
+button{
+    display: flex;
+    appearance: none;
+    cursor: pointer;
+    font-family: var(--font-h);
+    border: none;
+    background-color: #FFFDF5;
+    opacity: 1;
+    &:after{
+        content: url(../assets/arrow.svg);
+    }
+    &:hover{
+        font-weight: 500;
+    }
+    &:hover:after{
+        content: url(../assets/arrow-long.svg);
+    }
+   
+}
+
+p{
+    font-family: var(--font-text);
 }
 
 
