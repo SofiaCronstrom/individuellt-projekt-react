@@ -1,4 +1,4 @@
-export const Collection = () => {
+export default function Collection () {
     return (
         <>
         </>
