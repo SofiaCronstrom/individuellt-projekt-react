@@ -18,6 +18,8 @@ background-repeat: no-repeat;
 h1, a, h2, h3 {
  font-family: var(--font-h);
  font-weight: 500;
+ color: var(--text-color);
+ text-decoration: none;
 }
 
 button{

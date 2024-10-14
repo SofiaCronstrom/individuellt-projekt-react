@@ -1,21 +1,21 @@
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export function Header (){
 return (
     <header className="header">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
        <h1>SNAPSPIRATION</h1>
-      </Link>
+      </NavLink>
       <nav className='navigation'>
-        <Link className="nav-link" to={"/"}>
+        <NavLink className="nav-link" to={"/"}>
         Home
-        </Link>
-        <Link className="nav-link" to={"search"}>
+        </NavLink>
+        <NavLink className="nav-link" to={"search"}>
         Search
-        </Link>
-        <Link className="nav-link" to={"collection"}>
+        </NavLink>
+        <NavLink className="nav-link" to={"collection"}>
         Your collection
-        </Link>
+        </NavLink>
       </nav>
     </header>
 );
