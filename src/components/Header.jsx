@@ -1,20 +1,25 @@
 import {NavLink} from 'react-router-dom';
-
+import '../css/header.css'
+import arrow from '../assets/arrow-nav.svg';
+import arrowLong from '../assets/arrow-nav-long.svg';
 export function Header (){
 return (
     <header className="header">
-      <NavLink to={"/"}>
-       <h1>SNAPSPIRATION</h1>
+      <NavLink to={"/"} className="header-h1">
+       <h1>SNAPSPIRATION</h1> 
       </NavLink>
       <nav className='navigation'>
         <NavLink className="nav-link" to={"/"}>
-        Home
+        <span>Home</span>
+        <img className="arrow" src={arrow} alt="a black arrow" />
         </NavLink>
         <NavLink className="nav-link" to={"search"}>
-        Search
+        <span>Search</span>
+        <img className="arrow" src={arrow} alt="a black arrow" />
         </NavLink>
         <NavLink className="nav-link" to={"collection"}>
-        Your collection
+        <span>Collection</span>
+        <img className="arrow" src={arrow} alt="a black arrow" />
         </NavLink>
       </nav>
     </header>

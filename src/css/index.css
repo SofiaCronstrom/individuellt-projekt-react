@@ -11,7 +11,9 @@
 background: rgb(255,228,228);
 background: radial-gradient(circle at center, #ffe4e4 1%,#fff0df 52%,#fff0df 52%,#fffdf5 54%,#fff0df 58%,#fffdf5 65%,#fffdf5 100%);
 background-repeat: no-repeat;
-
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 
