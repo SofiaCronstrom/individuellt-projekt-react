@@ -1,8 +1,10 @@
+import { SearchForm } from "../components/searchForm";
+
 export function Search(){
 
     return(
-        <>
-        <h1>Search</h1>
-        </>
+        <main>
+        <SearchForm />
+        </main>
     )
 }
