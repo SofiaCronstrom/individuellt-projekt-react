@@ -18,6 +18,18 @@ padding: 0;
 box-sizing: border-box;
 }
 
+#root{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 6rem auto;
+}
+
 
 h1, a, h2, h3 {
  font-family: var(--font-h);
@@ -26,24 +38,40 @@ h1, a, h2, h3 {
  text-decoration: none;
 }
 
-button{
+p{
+    font-family: var(--font-text);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.a-btn{
     display: flex;
+    align-items: center;
+button{
     appearance: none;
     cursor: pointer;
     font-family: var(--font-h);
+    font-size: 1.5rem;
     border: none;
-    background-color: #FFFDF5;
-    opacity: 1;
-    &:after{
-        content: url(../assets/arrow.svg);
+    background-color: #fffdf500;
+    font-weight: 500;
+    transition: left 0.3s ease;
+   }
+   img{
+    position: relative; /* Allows for smooth movement */
+    transition: left 0.3s ease;
+    height: 24px;
+  }
+  &:hover{
+    button{
+    font-weight: 600;
     }
-    &:hover{
-        font-weight: 500;
+    img{
+        left: 0.5rem;
     }
-    &:hover:after{
-        content: url(../assets/arrow-long.svg);
-    }
-   
+  }
 }
 
 p{

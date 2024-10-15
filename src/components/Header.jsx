@@ -1,7 +1,7 @@
 import {NavLink} from 'react-router-dom';
 import '../css/header.css'
 import arrow from '../assets/arrow-nav.svg';
-import arrowLong from '../assets/arrow-nav-long.svg';
+
 export function Header (){
 return (
     <header className="header">
