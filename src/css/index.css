@@ -2,7 +2,6 @@
 
 :root {
  --text-color: #1e1e1e;
- --hover-box: #FFE9E2;
  --button-random: #5B0090;
  --modal-color: #FFFDF5;
 --font-h: "Tourney", sans-serif;
@@ -12,7 +11,6 @@ background: rgb(255,228,228);
 background: no-repeat radial-gradient(circle at 50% 50%, #ffe4e4 1%, #fff0df 29%, #fff0df 30%, #fffdf5 35%, #fff0df 40%, #fffdf5 45%, #fffdf5 100%);
 background-size: contain;
 
-height: 100vh;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -49,7 +47,7 @@ p{
 .btn{
     display: flex;
     align-items: center;
-button{
+button.btn-primary{
     appearance: none;
     cursor: pointer;
     font-family: var(--font-h);

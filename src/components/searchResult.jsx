@@ -1,5 +1,5 @@
 
-import "../css/searchResult.css";
+import "../css/searchRes-coll.css";
 import { ImageCard } from "./ImageCard.jsx";
 
 export function SearchResult() {
