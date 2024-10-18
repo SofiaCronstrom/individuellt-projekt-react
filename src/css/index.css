@@ -8,7 +8,7 @@
 --font-text: "Inter", sans-serif;
 
 background: rgb(255,228,228);
-background: no-repeat radial-gradient(circle at 50% 50%, #ffe4e4 1%, #fff0df 29%, #fff0df 30%, #fffdf5 35%, #fff0df 40%, #fffdf5 45%, #fffdf5 100%);
+background: no-repeat radial-gradient(circle at 50% 30%, #ffe4e4 1%, #fff0df 29%, #fff0df 30%, #fffdf5 35%, #fff0df 40%, #fffdf5 45%, #fffdf5 100%);
 background-size: contain;
 
 margin: 0;
