@@ -1,5 +1,4 @@
-import { SearchResult } from "../components/searchResult";
-import "../css/searchRes-coll.css"
+import "../css/searchRes-coll.css";
 
 export function Collection() {
 
@@ -9,7 +8,7 @@ export function Collection() {
         <main>
             <p>Your own collection of images</p>
             <p className="small">To organize the images in your collection, simply drag them into the desired order. </p>
-         <SearchResult />
+        
         </main>
     )
 }

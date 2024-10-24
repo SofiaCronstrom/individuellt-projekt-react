@@ -1,11 +1,10 @@
-import { SearchForm } from "../components/searchForm";
-import { SearchResult } from "../components/searchResult";
+import { SearchComponent } from "../components/SearchComponent";
+
 export function Search(){
 
     return(
         <main>
-        <SearchForm />
-        <SearchResult />
+        <SearchComponent />
         </main>
     )
 }

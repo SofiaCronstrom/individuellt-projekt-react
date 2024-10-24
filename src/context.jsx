@@ -3,18 +3,22 @@ import { createContext, useState } from "react";
 export const ImageContext = createContext();
 
 export const ImageProvider = ({children}) => {
-    const [images, setImages] = useState([]);
+    const [collection, setCollection] = useState([]);
 
-    const addImage = (image) => setImages([...images, image]);
+    const addImage = (image) => {
+        setCollection((prev) => [...prev, image]);
+    };
 
-    const removeImage = (id) => setImages(images.filter(image.id !== id));
+    const removeImage = (id) => {
+        setCollection((prev) => prev.filter(image => image.id !== id));
+    };
 
     const updateImage = (imageUpdated) => {
-        setImages(images.map(image => (image.id === imageUpdated.id ? imageUpdated : image)));
+        setCollection(images.map(image => (image.id === imageUpdated.id ? imageUpdated : image)));
     };
     
     return(
-        <ImageContext.Provider value={{images, addImage, removeImage, updateImage}}>
+        <ImageContext.Provider value={{collection, addImage, removeImage, updateImage}}>
           {children}
         </ImageContext.Provider>
     );
